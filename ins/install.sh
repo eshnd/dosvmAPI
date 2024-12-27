@@ -11,7 +11,4 @@ priority=higher,normal
 mapperfile=mapper-0.74-3.map
 usescancodes=true"
 
-python3 -m venv "venv"
-source venv/bin/activate
-pip install getpass
 python3 setup.py
