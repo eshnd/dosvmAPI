@@ -1,3 +1,3 @@
 # dosemu-linux
-linux distribution for 8086 DOS emulation
+linux distribution for x86 DOS emulation
 # how to install
