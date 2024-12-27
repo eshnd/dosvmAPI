@@ -11,9 +11,7 @@ os.environ['PATH'] += ':/bin:/usr/bin'
 os.system("touch " + dospath + "/INPUT.TXT")
 os.system("touch " + dospath + "/OUTPUT.TXT")
 
-d_q = '"' + dospath + '"'
-
-os.system('''{ printf c=\""''' + d_q + '''\""; cat ../backend/main.py; } > temp && mv temp ../backend/main.py''')
+os.system('''{ printf "c=\'''' + dospath + '''\'"; cat ../backend/main.py; } > temp && mv temp ../backend/main.py''')
 
 os.system("mv ../backend ../execs/* " + dospath)
 
