@@ -1,6 +1,6 @@
 # c = "/home/eshnd/projects/dosemu-linux/"
-outfile = c + "OUTPUT.TXT"
-infile = c + "INPUT.TXT"
+outfile = c + "/OUTPUT.TXT"
+infile = c + "/INPUT.TXT"
 
 f = open(outfile, "w")
 f.write("")
