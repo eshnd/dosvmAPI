@@ -24,7 +24,7 @@ Also, the gfx folder will be it's own repo called dos-gfx: a simpler graphics en
 # for serious dos devs
 - a lot of this project was made for fun as a challenge, but for serious developers who want to use this:
 - move SRS.C from the linux directory into your project files
-- add #include "SRS.C" to your headers in your project
+- add ```#include "SRS.C"``` to your headers in your project
 - make 2 files in C, INPUT.TXT and OUTPUT.TXT
 - move the backend directory to C
 - run python file in backend and dos emulation software at the same time
