@@ -48,23 +48,32 @@ void px(int x1, int x2, int y1, int y2, char* color){
 char* getpx(int x, int y){
     int dc_color = getpixel(x, y);
 
-    if (dc_color == 0){
+    switch (dc_color) {
+    case 0:
         return "black";
-    } else if (dc_color == 1){
+        break;
+    case 1:
         return "blue";
-    } else if (dc_color == 2){
+        break;
+    case 2:
         return "green";
-    } else if (dc_color == 4){
+        break;
+    case 4:
         return "red";
-    } else if (dc_color == 6){
+        break;
+    case 6:
         return "brown";
-    } else if (dc_color == 7){
+        break;
+    case 7:
         return "grey";
-    } else if (dc_color == 14){
-        return "yellow";
-    } else if (dc_color == 14){
-        return "white";
-    }
+        break;
+    case 14:
+        return "yellow"; 
+        break;
+    case 15:
+        return "white"; 
+        break;
+}
     return "unsupported color";
 }
 
