@@ -17,8 +17,12 @@ void keygrab(int key){ // special part of update
     // you can do it!!! call me if u need help, i have no life
 }
 
-void mousedown(int x, int y){ // another special part of update (only includes left mouse button, right clicks are for losers)
+void leftclick(int x, int y){ // another special part of update
     px(x, x+5, y, y+5, "red");
+}
+
+void rightclick(int x, int y){ // yet another special part of update
+    px(x, x+5, y, y+5, "blue");
 }
 
 void update(){
