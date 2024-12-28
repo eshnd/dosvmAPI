@@ -37,7 +37,9 @@ int cursor() { // basically just the update function at this point
         // idk why i just started commenting on my code after starting this project days ago
 
         if (button == 1) {
-            mousedown(x, y);
+            leftclick(x, y);
+        } else if (button == 2){
+            rightclick(x, y);
         }
 
         if (LX != -1 && LY != -1) {
