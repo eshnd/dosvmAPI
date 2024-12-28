@@ -14,7 +14,7 @@ void mousepos(int *x, int *y, int *button) {
 }
 
 
-int cursor() { // basically just the update function at this point
+int cursor() { // basically just the update function
     int x, y, button, LX = -1, LY = -1, LXC1, LXC2, LXC3, LXC4;
 
     start(); // its just a shitty game engine now smh. i was considering adding delta time but that would make it less shitty so NO
