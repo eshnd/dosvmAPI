@@ -51,28 +51,20 @@ char* getpx(int x, int y){
     switch (dc_color) {
     case 0:
         return "black";
-        break;
     case 1:
         return "blue";
-        break;
     case 2:
         return "green";
-        break;
     case 4:
         return "red";
-        break;
     case 6:
         return "brown";
-        break;
     case 7:
         return "grey";
-        break;
     case 14:
         return "yellow"; 
-        break;
     case 15:
         return "white"; 
-        break;
 }
     return "unsupported color";
 }
