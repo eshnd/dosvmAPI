@@ -21,3 +21,11 @@ Also, the gfx folder will be it's own repo called dos-gf: a simpler graphics eng
 - mount c: and go into it
 - you have working executable files and can run commands in whatever shell you use!
 - you're gonna have to do the whole process of starting the python file manually and can only use windows commands, but you can optimize it more for your OS if you want
+# for serious dos devs
+- a lot of this project was made for fun as a challenge, but for serious developers who want to use this:
+- move SRS.C from the linux directory into your project files
+- add #include "SRS.C" to your headers in your project
+- make 2 files in C, INPUT.TXT and OUTPUT.TXT
+- move the backend directory to C
+- run python file in backend and dos emulation software at the same time
+- you can now access modern tech from dos
