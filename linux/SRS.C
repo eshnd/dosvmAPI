@@ -11,7 +11,7 @@ char* shell(char* doppy) {
     file = fopen("C:\\INPUT.TXT", "w");
 
     if (strcmp(doppy, "exit") == 0){
-        return 0;
+        return "exit";
     }
 
     fprintf(file, "%s\n", doppy);
