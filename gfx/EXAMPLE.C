@@ -8,7 +8,7 @@
 
 #include "PIXEL.C"
 
-void keygrab(int key){
+void keygrab(int key){ // special part of update
     if (key == 52) { 
         outtextxy(100,100,"you pressed 4. i am so proud of you :,)");
     }   
@@ -17,7 +17,7 @@ void keygrab(int key){
     // you can do it!!! call me if u need help, i have no life
 }
 
-void mousedown(int x, int y){
+void mousedown(int x, int y){ // another special part of update (only includes left mouse button, right clicks are for losers)
     px(x, x+5, y, y+5, "red");
 }
 
@@ -25,14 +25,16 @@ void update(){
     return;
 }
 
+void start(){
+    px(50, 200, 50, 200, "blue");
+    printf(getpx(70, 70));
+}
 #include "CURSOR.C"
 
 
 int main() {
     init();
-    px(50, 200, 50, 200, "blue");
-    printf(getpx(70, 70));
+    start();
     cursor();
-    
     return 0;
 }
