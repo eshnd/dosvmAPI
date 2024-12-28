@@ -21,6 +21,10 @@ void mousedown(int x, int y){
     px(x, x+5, y, y+5, "red");
 }
 
+void update(){
+    return;
+}
+
 #include "CURSOR.C"
 
 
