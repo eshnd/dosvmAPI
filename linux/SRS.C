@@ -5,7 +5,7 @@
 
 // why so serious? jonkler appears and starts doing silly dances. i am so sleepy its like 14 am here :D
 
-void shell(char* doppy) {
+char* shell(char* doppy) {
     FILE *file;
 
     file = fopen("C:\\INPUT.TXT", "w");
@@ -23,7 +23,7 @@ void shell(char* doppy) {
     file = fopen("C:\\OUTPUT.TXT", "r");
 
     while (fgets(doppy, sizeof(doppy), file) != NULL) {
-        printf("%s", doppy);
+            return doppy;
     }
     
 
