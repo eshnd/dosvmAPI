@@ -3,7 +3,7 @@ linux distribution for x86 DOS emulation
 # how it works
 In the same way that Ubuntu uses Debian as a base, Dosemu uses whatever OS you have installed as a base, and allows you to run a minimal version of it inside DOS emulation software. This allows you to use things like modern Python inside DOS, which can let you use advanced AI libraries in your DOS video games (which was the main purpose for this project's development). We also decided to make a desktop environment, to really solidify it as its own Linux distro.
 
-Also, the gfx folder will be it's own repo called dos-gf: a simpler graphics engine for DOS, allowing you to build apps extremely easily. We've taken care of all the BIOS interrupts and most of the super technical stuff, leaving users to make their own software painlessly!
+Also, the gfx folder will be it's own repo called dos-gfx: a simpler graphics engine for DOS, allowing you to build apps extremely easily. We've taken care of all the BIOS interrupts and most of the super technical stuff, leaving users to make their own software painlessly!
 # how to install
 - THIS IS FOR LINUX USERS ONLY (it's possible to install on mac and windows but you're gonna have to do it manually)
 - clone the repo and cd into the ```ins``` folder
