@@ -29,6 +29,8 @@ int cursor() { // basically just the update function at this point
 
         mousepos(&x, &y, &button);
 
+        update(); // just making it official atp
+
         
         // idk why i just started commenting on my code after starting this project days ago
 
