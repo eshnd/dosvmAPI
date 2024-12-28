@@ -1,4 +1,4 @@
-dospath = input("input the path for your preffered drive of your dos emulation software (e.g. /home/username/dos): ")
+dospath = input("path for your DOS C: drive (e.g. /home/username/dos): ")
 
 import getpass
 username = getpass.getuser()
