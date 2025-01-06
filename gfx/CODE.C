@@ -30,10 +30,15 @@ void rightclick(int x, int y){ // yet another special part of update
 void update(){
     return;
 }
-
+void taskbar(){
+    px(0, 700, 440, 720, "red");
+    px(0, 100, 440, 720, "red");
+}
 void start(){
     px(50, 200, 50, 200, "blue");
     printf(getpx(70, 70));
+    taskbar();
+    
 }
 
 
