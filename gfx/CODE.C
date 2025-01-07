@@ -1,6 +1,9 @@
 // THIS FILE HAS EVERY FUNCTION THAT YOU PROBABLY NEED TO USE FOR OUR PROJECT
 // btw if someone else is actually using this code, please ignore most of the comments, they are for my groupmates. ty!
 
+int apps = 1;
+
+
 void keygrab(int key){ // special part of update
     if (key == 52) { 
         char input[100]; // change this on how many characters you want user to be able to input.
@@ -20,25 +23,48 @@ void keygrab(int key){ // special part of update
 }
 
 void leftclick(int x, int y){ // another special part of update
-    px(x, x+5, y, y+5, "red");
+    if (brange(x, y, 0, 100, 440, 720)){
+        // add home function here
+    }
 }
 
 void rightclick(int x, int y){ // yet another special part of update
-    px(x, x, y, y, "blue");
 }
 
 void update(){
     return;
 }
+
 void taskbar(){
-    px(0, 700, 440, 720, "red");
-    px(0, 100, 440, 720, "red");
+    px(0, 700, 440, 720, "blue");
+    px(0, 100, 440, 720, "green");
+    setcolor(YELLOW);
+    outtextxy(35, 455, "home");
 }
+
+void app(char* name, char* color){
+    int displacement = apps * 110;
+    if (strcmp(color, "blue")){
+        px(0+displacement, 100+displacement, 440, 720, color);
+    } else {
+        px(0+displacement, 100+displacement, 440, 720, "green");
+    }
+    if (strcmp(color, "black")){
+        setcolor(BLACK);
+    } else {
+        setcolor(WHITE);
+
+    }
+    outtextxy(35+displacement, 455, name);
+    apps = apps + 1;
+}
+
 void start(){
-    px(50, 200, 50, 200, "blue");
-    printf(getpx(70, 70));
     taskbar();
-    
+    // each app should be 4 letters to be centered
+    app("poo", "blue");
+    app("poo", "green");
+    app("poo", "black");
 }
 
 
