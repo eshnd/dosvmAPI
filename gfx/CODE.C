@@ -1,5 +1,5 @@
 // THIS FILE HAS EVERY FUNCTION THAT YOU PROBABLY NEED TO USE FOR OUR PROJECT
-// btw if someone else is actually using this code, please ignore most of the comments, they are for my groupmates. ty!
+// btw if someone else is actually using this code, please ignore most of the comments, they are for my groupmates. ty! 
 
 int apps = 1;
 
