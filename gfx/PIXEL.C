@@ -64,6 +64,24 @@ void px(int x1, int x2, int y1, int y2, char* color){
 	}
 }
 
+void pxb(int x1, int x2, int y1, int y2, int color){
+
+	int x = x1;
+	int x_c = (x2 + 1);
+	int y = y1;
+	int y_c = (y2 + 1);
+
+
+	while (x < x_c){
+		y = y1;
+		while (y < y_c){
+			putpixel(x, y, color);
+			y++;
+		}
+		x++;
+	}
+}
+
 char* getpx(int x, int y){
     int dc_color = getpixel(x, y);
 
