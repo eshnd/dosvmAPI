@@ -2,6 +2,8 @@
 // btw if someone else is actually using this code, please ignore most of the comments, they are for my groupmates. ty! 
 
 int apps = 1;
+int wp_wait = 0;
+int wp_current = 0;
 
 
 void keygrab(int key){ // special part of update
@@ -22,9 +24,25 @@ void keygrab(int key){ // special part of update
     // you can do it!!! call me if u need help, i have no life
 }
 
+void changeWP(){
+    if (wp_current == 7){
+        wp_current = -1;
+    }
+    wp_current = wp_current + 1;
+    if (wp_current == 1){
+        wp_current = wp_current + 1;
+    }
+    pxb(0, 1000, 0, 440, wp_current);
+}
+
 void leftclick(int x, int y){ // another special part of update
-    if (brange(x, y, 0, 100, 440, 720)){
-        // add home function here
+    if (brange(x, y, 0+110, 100+110, 440, 720)){
+        if (wp_wait == 0){
+            changeWP();
+            wp_wait = 1;
+            delay(400);
+            wp_wait = 0;
+        }
     }
 }
 
@@ -32,7 +50,7 @@ void rightclick(int x, int y){ // yet another special part of update
 }
 
 void update(){
-    return;
+    
 }
 
 void taskbar(){
@@ -62,9 +80,7 @@ void app(char* name, char* color){
 void start(){
     taskbar();
     // each app should be 4 letters to be centered
-    app("poo", "blue");
-    app("poo", "green");
-    app("poo", "black");
+    app("wppr", "green");
 }
 
 
