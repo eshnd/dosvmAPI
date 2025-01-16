@@ -24,9 +24,3 @@ char* shell(char* doppy, int mem) {
     return out2;
 }
 
-int main() {
-    char *result = shell("ls", 1024);
-    printf("%s", result);
-    free(result);
-    return 0;
-}
