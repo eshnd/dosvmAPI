@@ -1,4 +1,4 @@
-# dosemu-api
+# dosvm-api
 access host computer
 
 The gfx folder can be repurposed to be a dos graphics library for beginners who don't know how to use BIOS interrupts. I coded it to be as easy as possible so that my friends could contribute code to the GUI.
